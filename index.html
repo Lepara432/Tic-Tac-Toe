@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="grid">
+        <div class="turn yellow" data-id="turn">
+          <i class="fa-solid fa-x"></i>
+          <p>Player 1, you are up!</p>
+        </div>
+
+        <div id="1" class="square" data-id="square"></div>
+        <div id="2" class="square" data-id="square"></div>
+        <div id="3" class="square" data-id="square"></div>
+        <div id="4" class="square" data-id="square"></div>
+        <div id="5" class="square" data-id="square"></div>
+        <div id="6" class="square" data-id="square"></div>
+        <div id="7" class="square" data-id="square"></div>
+        <div id="8" class="square" data-id="square"></div>
+        <div id="9" class="square" data-id="square"></div>
+        <div class="score" style="background-color: var(--yellow)">
+          <p>Player 1</p>
+        </div>
+        <div class="score shadow" style="background-color: var(--light-gray)">
+          <p>VS</p>
+        </div>
+        <div class="score shadow" style="background-color: var(--turquoise)">
+          <p>Player 2</p>
+        </div>
+      </div>
+    </main>
+    <div class="modal hidden" data-id="modal">
+      <div class="modal-contents">
+        <p data-id="modal-contents">Player 1 wins</p>
+        <button data-id="modal-button">Play again</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
